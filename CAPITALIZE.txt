@@ -1,0 +1,10 @@
+# Complete the solve function below.
+def solve(s):
+    l = s.split(" ")
+    str=''
+    for i in l:
+        str=str+i.capitalize()+" "
+        
+            
+    return str   
+    

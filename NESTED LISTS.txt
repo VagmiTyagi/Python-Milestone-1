@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    records = []
+    scores = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        records.append([name, score])
+        scores.append(score)
+    second_highest = sorted(set(scores))[1]
+    names = []
+    for record in records:
+        if second_highest in record:
+            names.append(record[0])
+            names.sort()
+print('\n'.join (names))
+        
