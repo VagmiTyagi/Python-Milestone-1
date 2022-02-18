@@ -1,0 +1,20 @@
+import turtle
+t=turtle.Turtle()
+a=turtle.Screen()
+a.title("Vagmi_Triangle")
+
+t=turtle.Turtle()
+
+t.pen(pensize=2,speed=10)
+t.home()
+
+t.begin_fill()
+t.fd(100)
+t.lt(120)
+t.fd(100)
+t.lt(120)
+t.fd(100)
+t.lt(120)
+t.end_fill()
+turtle.mainloop()
+

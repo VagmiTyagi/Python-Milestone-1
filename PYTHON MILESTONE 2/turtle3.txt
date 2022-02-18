@@ -1,0 +1,14 @@
+import turtle
+
+a=turtle.Screen()
+a.title("Vagmi_Circles")
+t=turtle.Turtle()
+t.pen(pencolor="magenta",fillcolor="orange",speed=0)
+
+r=10
+while(r<=40):
+    t.circle(r)
+    r+=10
+turtle.mainloop()
+    
+

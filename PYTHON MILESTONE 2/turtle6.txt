@@ -1,0 +1,36 @@
+import turtle
+trtl=turtle.Turtle()
+screen=turtle.Screen()
+screen.title("Vagmi's Heart Flower")
+screen.setup(620,620)
+screen.bgcolor('black')
+colors=["red","green","blue","yellow","purple"]
+trtl.pensize(3)
+trtl.speed(10)
+
+def curve():
+    for i in range(200):
+        trtl.right(1)
+        trtl.forward(1)
+    
+
+def heart():
+     
+    for i in range(6):
+        trtl.pencolor(colors[i])
+        # Draw the left line
+        trtl.left(140)
+        trtl.forward(113)
+        # Draw the left curve
+        curve()
+        trtl.left(120)
+        # Draw the right curve
+        curve()
+        # Draw the right line
+        trtl.forward(112)
+            
+heart()            
+
+
+
+

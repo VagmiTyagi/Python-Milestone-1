@@ -1,0 +1,23 @@
+import turtle
+a=turtle.Screen()
+a.title("Vagmi_snowflake")
+t=turtle.Turtle()
+t.shape("turtle")
+t.color("yellow","blue")
+t.getscreen().bgcolor("cyan")
+t.speed(10)
+
+def star(turtle,size):
+    if size<=10:
+        return
+    else:
+        for i in range(5):
+            turtle.fd(size)
+            star(turtle,size/3)
+            turtle.left(216)
+            
+            
+
+x=int(input("Enter the size"))
+star(t,x)
+
